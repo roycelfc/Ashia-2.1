@@ -1,0 +1,24 @@
+{
+  "name": "ashia-telegram",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Ashia ✦ — elegante asistente y bot social para Telegram.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check src/index.js && node --check src/bot.js && node --check src/store.js",
+    "set-webhook": "node scripts/set-webhook.mjs"
+  },
+  "dependencies": {
+    "grammy": "1.45.1"
+  },
+  "devDependencies": {
+    "wrangler": "4.118.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ashia-telegram",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-15",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  // Para persistencia real, crea una KV y descomenta/rellena este bloque:
+  // "kv_namespaces": [
+  //   { "binding": "ASHIA_KV", "id": "TU_NAMESPACE_ID" }
+  // ]
+}
